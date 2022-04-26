@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>가계부 작성(지출)</title>   
+    <link rel="stylesheet" href="stlye.css">
+    <script>
+     function calc() {
+
+  const table = document.getElementById('pay');
+
+  let sum = 0;
+  for(let i = 0; i < table.rows.length; i++)  {
+    sum += parseInt(table.rows[i].cells[1].innerHTML);
+  }
+  
+  document.getElementById('sum').innerText = sum;
+  
+}
+      </script>
+</head>
+
+<body>
+    <header>
+        <div id="top-header">
+            <div id="logo">
+                <img src="images/logo.jpg" />
+            </div>
+            <nav>
+                <div id="menu">
+                    <ul>
+                       <li class="active"><a href="Home.html">홈으로</a></li>
+                        <li><a href="SecondSection.html">마이페이지</a></li>
+                        <li><a href="#">오늘의 추천</a></li>
+                        <li><a href="ThirdSection.html">가계부 작성(수입)</a></li>
+                        <li><a href="ForthSection.html">가계부 작성(지출)</a></li>
+                        <li><a href="Sign Up.html">로그인</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<h1>가계부 작성</h1><br>
+<h2>지출내역</h2>
+    <table id = "pay"
+    style="width:80%">
+        <tr style="background-color:lightgrey">
+            <th>일자</th>
+            <th>내역</th>     
+            <th>결제수단</th>
+            <th>금액</th>
+        </tr>
+        <tr>
+            <td> <input type = "date" name = "date"></td>
+            <td> <input type = "text" name = "text"></td>       
+            <td> <select name = "pay"> 
+              <option>선택하세요</option>
+                    <option value="카드">카드</option>
+                    <option value="현금">현금</option>
+              </select>
+            </td>
+          <td><input type = "number" name = "num"> </td>
+         <tr>
+            <td> <input type = "date" name = "date"></td>
+            <td> <input type = "text" name = "text"></td>       
+            <td> <select name = "pay"> 
+              <option>선택하세요</option>
+                    <option value="카드">카드</option>
+                    <option value="현금">현금</option>
+              </select>
+            </td>
+          <td><input type = "number" name = "num"> </td><tr>
+            <td> <input type = "date" name = "date"></td>
+            <td> <input type = "text" name = "text"></td>       
+            <td> <select name = "pay"> 
+              <option>선택하세요</option>
+                    <option value="카드">카드</option>
+                    <option value="현금">현금</option>
+              </select>
+            </td>
+          <td><input type = "number" name = "num"> </td><tr>
+            <td> <input type = "date" name = "date"></td>
+            <td> <input type = "text" name = "text"></td>       
+            <td> <select pay name = "pay"> 
+              <option>선택하세요</option>
+                    <option value="카드">카드</option>
+                    <option value="현금">현금</option>
+              </select>
+            </td>
+          <td><input type = "number" name = "num"> </td><tr>
+            <td> <input type = "date" name = "date"></td>
+            <td> <input type = "text" name = "text"></td>       
+            <td> <select pay name = "pay"> 
+              <option>선택하세요</option>
+                    <option value="카드">카드</option>
+                    <option value="현금">현금</option>
+              </select>
+            </td>
+          <td><input type = "number" name = "num"> </td><tr>
+            <td> <input type = "date" name = "date"></td>
+            <td> <input type = "text" name = "text"></td>       
+            <td> <select name = "pay"> 
+              <option>선택하세요</option>
+                    <option value="카드">카드</option>
+                    <option value="현금">현금</option>
+              </select>
+            </td>
+          <td><input type = "number" name = "num1"> </td>
+    </table>
+  <input type='button' value='지출 총액' onclick='calc()' />
+<input type = "text" id = "sum">
+</body>
+</html>

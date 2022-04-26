@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> 회원가입 창 </title>
+  <link rel="stylesheet" href="stlye.css">
+    <style>
+        form fieldset {
+            margin: 10px 0px;
+        }
+
+        form legend {
+            font-size: 18px;
+            color: #0066ff;
+            font-weight: 600;
+        }
+
+        form label.reg {
+            font-size: 14px;
+            width: 120px;
+            float: left;
+        }
+
+        form label em {
+            font-size: 15px;
+            color: red;
+            font-weight: 800;
+        }
+
+        form ul li {
+            list-style: none;
+        }
+
+        form fieldset.sendform {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="top-header">
+            <div id="logo">
+                <img src="images/logo.jpg" />
+            </div>
+            <nav>
+                <div id="menu">
+                    <ul>
+                        <li class="active"><a href="Home.html">홈으로</a></li>
+                        <li><a href="SecondSection.html">마이페이지</a></li>
+                        <li><a href="#">오늘의 추천</a></li>
+                        <li><a href="ThirdSection.html">가계부 작성(수입)</a></li>
+                        <li><a href="ForthSection.html">가계부 작성(지출)</a></li>
+                        <li><a href="Sign Up.html">로그인</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+        
+        <form action="text" method="post" />
+        <fieldset>
+            <legend> 로그인 </legend>
+            <label for="user_id"> 아이디 </label>
+            <input type="text" id="user_id" name="user_id" size="10" autofocus>
+
+            <label for="user_pw"> 비밀번호 </label>
+            <input type="password" id="user_pw" name="user_pw">
+        </fieldset>
+
+        <fieldset>
+            <legend> 회원가입 </legend>
+            <ul>
+                
+                
+                <li> <label class="reg" for="new_id"> 아이디 <em> * </em> </label>
+                    <input type="text" id="new_id" name="new_id" size="20" autocomplete="on" required>
+                </li>
+                <li> <label class="reg" for="new_pw1"> 비밀번호 <em> * </em> </label>
+                    <input type="password" id="new_pw1" name="new_pw1" size="20" required>
+                </li>
+                <li> <label class="reg" for="new_pw2"> 비밀번호 확인 <em> * </em> </label>
+                    <input type="password" id="new_pw2" name="new_pw2" size="20" required>
+                </li>
+                <li> <label class="reg" for="user_name"> 이름 <em> * </em> </label>
+                    <input type="text" id="user_name" name="user_name" size="20" required>
+                </li>
+                <li> <label class="reg" for="user_mail"> 메일주소 <em> * </em> </label>
+                    <input type="email" id="user_mail" name="user_mail" size="20" required>
+                </li>
+                
+                <li> <label class="reg" for="user_tel"> 전화 번호 </label>
+                    <input type="tel" id="user_tel" name="user_tel" size="20">
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset class="easys">
+            <legend> 기타 입력사항. </legend>
+            <textarea rows="intro" cols="60" rows="5" name="intro">
+기타 입력 창 입니다.
+가입 경로 및 건의 아이디어 있으시면 기재해주십시요.
+                </textarea>
+        </fieldset>
+
+        <fieldset class="sendform">
+            <input type="submit" value="가입하기">
+            <input type="reset" value="다시쓰기">
+        </fieldset>
+    </body>
+</html>
